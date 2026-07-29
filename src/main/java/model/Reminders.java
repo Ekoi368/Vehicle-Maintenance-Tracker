@@ -3,8 +3,8 @@ package model;
 import java.time.LocalDate;
 
 public class Reminders {
-    private int reminderId,vehicleId;
-    private String serviceType,staus;
+    private int reminderId, vehicleId;
+    private String serviceType, staus;
     private LocalDate dueDate;
 
     public Reminders() {
@@ -57,4 +57,16 @@ public class Reminders {
     public void setVehicleId(int vehicleId) {
         this.vehicleId = vehicleId;
     }
+
+    @Override
+    public String toString() {
+        return "Reminders{" +
+                "reminderId=" + reminderId +
+                ", vehicleId=" + vehicleId +
+                ", serviceType='" + serviceType + '\'' +
+                ", staus='" + staus + '\'' +
+                ", dueDate=" + dueDate +
+                '}';
+    }
+
 }

@@ -11,6 +11,7 @@ public class MaintenanceRecord {
     public MaintenanceRecord() {
     }
 
+
     public MaintenanceRecord(int maintenanceId, int vehicleId, String serviceType, String mechanicName, String description, LocalDate serviceDate, double cost) {
         this.maintenanceId = maintenanceId;
         this.vehicleId = vehicleId;
@@ -76,4 +77,22 @@ public class MaintenanceRecord {
     public void setCost(double cost) {
         this.cost = cost;
     }
+
+
+
+    @Override
+    public String toString() {
+        return "MaintenanceRecord{" +
+                "maintenanceId=" + maintenanceId +
+                ", vehicleId=" + vehicleId +
+                ", serviceType='" + serviceType + '\'' +
+                ", mechanicName='" + mechanicName + '\'' +
+                ", description='" + description + '\'' +
+                ", serviceDate=" + serviceDate +
+                ", cost=" + cost +
+                '}';
+
+
+    }
+
 }

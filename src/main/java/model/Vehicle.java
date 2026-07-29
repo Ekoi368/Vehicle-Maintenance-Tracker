@@ -7,6 +7,8 @@ public class Vehicle {
     public Vehicle() {
     }
 
+
+
     public Vehicle(int vehicleId, int userId, String ownerName, String regNumber, String brand, String model, String vehicleType) {
         this.vehicleId = vehicleId;
         this.userId = userId;
@@ -72,4 +74,20 @@ public class Vehicle {
     public void setVehicleType(String vehicleType) {
         this.vehicleType = vehicleType;
     }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "vehicleId=" + vehicleId +
+                ", userId=" + userId +
+                ", ownerName='" + ownerName + '\'' +
+                ", regNumber='" + regNumber + '\'' +
+                ", brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", vehicleType='" + vehicleType + '\'' +
+                '}';
+    }
+
+
+
 }
