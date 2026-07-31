@@ -2,13 +2,26 @@ package com.vehicletacker.vehiclemaintenancetracker;
 
 import javafx.application.Application;
 import model.User;
+import util.DBAccess;
 
 import java.util.Scanner;
 
 public class Launcher {
     public static void main(String[] args) {
         //Application.launch(HelloApplication.class, args);
-        User newuser = new User();
+
+        DBAccess db = new DBAccess();
+        if (db.isConnected()){
+            System.out.println("Database is connected");
+        }
+        else{
+            System.out.println("Error connecting to Database");
+        }
+
+
+
+
+        /* User newuser = new User();
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter your ID");
@@ -42,7 +55,7 @@ public class Launcher {
         newuser.setPassword(password);
         newuser.setUsername(username);
 
-        System.out.println(newuser.toString());
+        System.out.println(newuser.toString()); */
 
 
     }
