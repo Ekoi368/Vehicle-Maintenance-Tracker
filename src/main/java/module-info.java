@@ -5,5 +5,7 @@ module com.vehicletacker.vehiclemaintenancetracker {
 
 
     opens com.vehicletacker.vehiclemaintenancetracker to javafx.fxml;
+    opens controller to javafx.fxml;
     exports com.vehicletacker.vehiclemaintenancetracker;
+    exports controller;
 }
