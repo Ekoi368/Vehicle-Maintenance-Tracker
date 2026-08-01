@@ -1,18 +1,31 @@
 package com.vehicletacker.vehiclemaintenancetracker;
 
 import javafx.application.Application;
-import model.MaintenanceRecord;
+/*import model.MaintenanceRecord;
 import model.User;
 import util.DBAccess;
 
-import java.util.Scanner;
+import java.util.Scanner;*/
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class Launcher {
-    public Launcher() {
+public class Launcher extends Application {
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/vehicletacker/vehiclemaintenancetracker/splash.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        stage.setTitle("Vehicle Maintenance Tracker");
+        stage.setScene(scene);
+        stage.show();
     }
 
+
     public static void main(String[] args) {
-        Application.launch(HelloApplication.class, args);
+        launch(args);
+        //Application.launch(HelloApplication.class, args);
         /* Scanner input =new Scanner(System.in);
         System.out.println("Enter your ID");
         int userid = input.nextInt();

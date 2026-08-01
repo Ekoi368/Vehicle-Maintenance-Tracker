@@ -12,7 +12,7 @@ import java.io.IOException;
 public class SplashController {
     @FXML
     public void initialize() {
-        PauseTransition delay = new PauseTransition(Duration.seconds(3));
+        PauseTransition delay = new PauseTransition(Duration.seconds(5));
 
         delay.setOnFinished(event -> openLoginScreen());
 
