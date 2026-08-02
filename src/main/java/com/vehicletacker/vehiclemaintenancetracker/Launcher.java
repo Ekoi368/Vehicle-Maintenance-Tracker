@@ -12,8 +12,8 @@ public class Launcher {
     }
 
     public static void main(String[] args) {
-        //Application.launch(HelloApplication.class, args);
-        Scanner input =new Scanner(System.in);
+        Application.launch(HelloApplication.class, args);
+        /* Scanner input =new Scanner(System.in);
         System.out.println("Enter your ID");
         int userid = input.nextInt();
         System.out.println("Enter your Full Name");
