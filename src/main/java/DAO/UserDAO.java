@@ -1,7 +1,7 @@
 package DAO;
 
 
-public class UserDAsO {
+public class UserDAO {
 
     private String username;
     private String email;
