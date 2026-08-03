@@ -1,11 +1,11 @@
 package com.vehicletacker.vehiclemaintenancetracker;
 
 import javafx.application.Application;
-/*import model.MaintenanceRecord;
-import model.User;
-import util.DBAccess;
+/*import com.vehicletacker.vehiclemaintenancetracker.model.MaintenanceRecord;
+import com.vehicletacker.vehiclemaintenancetracker.model.User;
+import com.vehicletacker.vehiclemaintenancetracker.util.DBAccess;
 
-import java.util.Scanner;*/
+import java.com.vehicletacker.vehiclemaintenancetracker.util.Scanner;*/
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;

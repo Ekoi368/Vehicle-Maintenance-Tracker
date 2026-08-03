@@ -1,4 +1,4 @@
-package controller;
+package com.vehicletacker.vehiclemaintenancetracker.controller;
 import javafx.animation.PauseTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +12,7 @@ import java.io.IOException;
 public class SplashController {
     @FXML
     public void initialize() {
-        PauseTransition delay = new PauseTransition(Duration.seconds(5));
+        PauseTransition delay = new PauseTransition(Duration.seconds(3));
 
         delay.setOnFinished(event -> openLoginScreen());
 

@@ -2,10 +2,11 @@ module com.vehicletacker.vehiclemaintenancetracker {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
+    requires jbcrypt;
 
+    opens com.vehicletacker.vehiclemaintenancetracker.controller
+            to javafx.fxml;
 
-    opens com.vehicletacker.vehiclemaintenancetracker to javafx.fxml;
-    opens controller to javafx.fxml;
     exports com.vehicletacker.vehiclemaintenancetracker;
-    exports controller;
+    exports com.vehicletacker.vehiclemaintenancetracker.controller;
 }

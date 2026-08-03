@@ -1,4 +1,4 @@
-package model;
+package com.vehicletacker.vehiclemaintenancetracker.model;
 
 public class Vehicle {
     private int vehicleId,userId;
@@ -83,7 +83,7 @@ public class Vehicle {
                 ", ownerName='" + ownerName + '\'' +
                 ", regNumber='" + regNumber + '\'' +
                 ", brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
+                ", com.vehicletacker.vehiclemaintenancetracker.model='" + model + '\'' +
                 ", vehicleType='" + vehicleType + '\'' +
                 '}';
     }
