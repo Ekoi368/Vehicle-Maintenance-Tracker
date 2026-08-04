@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SplashController">
+<AnchorPane prefHeight="500.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vehicletacker.vehiclemaintenancetracker.controller.SplashController">
    <children>
       <ImageView fitHeight="243.0" fitWidth="296.0" layoutX="164.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
          <image>

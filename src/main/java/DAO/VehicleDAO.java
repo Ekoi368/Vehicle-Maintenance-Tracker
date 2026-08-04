@@ -1,13 +1,13 @@
 package DAO;
 
-import model.Vehicle;
-import util.DBAccess;
+import com.vehicletacker.vehiclemaintenancetracker.model.Vehicle;
+import com.vehicletacker.vehiclemaintenancetracker.util.DBAccess;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VehicleDAO {
+public class VehicleDAO{
 
     private final Connection connection;
 
