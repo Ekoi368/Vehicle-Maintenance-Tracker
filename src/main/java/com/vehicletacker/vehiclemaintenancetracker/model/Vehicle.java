@@ -9,14 +9,15 @@ public class Vehicle {
 
 
 
-    public Vehicle(int vehicleID, String ownerName, String registrationNumber, String brand, String model, String vehicleType) {
-        this.vehicleId = vehicleId;
-        this.userId = userId;
+    public Vehicle(int vehicleID, int userID, String ownerName, String regNumber, String brand, String model, String vehicleType) {
         this.ownerName = ownerName;
         this.regNumber = regNumber;
         this.brand = brand;
         this.model = model;
         this.vehicleType = vehicleType;
+    }
+
+    public Vehicle(int vehicleID, String ownerName, String registrationNumber, String brand, String model, String vehicleType) {
     }
 
 

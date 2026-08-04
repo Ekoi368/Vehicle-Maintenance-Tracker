@@ -1,7 +1,7 @@
 package DAO;
 
-import model.MaintenanceRecord;
-import util.DBAccess;
+import com.vehicletacker.vehiclemaintenancetracker.model.MaintenanceRecord;
+import com.vehicletacker.vehiclemaintenancetracker.util.DBAccess;
 
 import java.sql.*;
 import java.util.ArrayList;

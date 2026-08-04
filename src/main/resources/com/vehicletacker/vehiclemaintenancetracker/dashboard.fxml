@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<VBox xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml"
-      fx:controller="controller.DashboardConroller"
-      spacing="10">
-    <padding>
-        <Insets top="15" right="15" bottom="15" left="15"/>
-    </padding>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.vehicletacker.vehiclemaintenancetracker.controller.DashboardController"
+            prefHeight="400.0" prefWidth="600.0">
 
-    <Label text="My Vehicles" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
-
-    <ListView fx:id="vehicleListView" prefHeight="400"/>
-
-    <HBox spacing="15" alignment="CENTER">
-        <Button text="Add Vehicle" onAction="#handleAddVehicle" prefWidth="150"/>
-        <Button text="Add Maintenance Record" onAction="#handleAddMaintenance" prefWidth="200"/>
-    </HBox>
-
-</VBox>
+</AnchorPane>
