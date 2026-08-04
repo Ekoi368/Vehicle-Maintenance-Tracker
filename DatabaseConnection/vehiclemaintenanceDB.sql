@@ -2,7 +2,7 @@ CREATE DATABASE vehiclemaintenanceDB;
 
 use vehiclemaintenanceDB;
 
-create table users (
+create table user (
 userID int primary key AUTO_INCREMENT,
 full_name varchar(100) not null,
 phone varchar(50) not null unique,
