@@ -18,8 +18,7 @@ public class VehicleDAO {
     // Create
     public boolean addVehicle(Vehicle vehicle) {
         String sql = "INSERT INTO vehicle (userID, owner_name, reg_number, brand, model, vehicle_type) VALUES (?, ?, ?, ?, ?, ?)";
-        try (PreparedStatement ps = connection.prepareStatement(sql)) {
-            ps.setInt(1, vehicle.getUserId());
+        try (PreparedStatement ps = connection.prepareStatement(sql)) {ps.setInt(1, vehicle.getUserId());
             ps.setString(2, vehicle.getOwnerName());
             ps.setString(3, vehicle.getRegNumber());
             ps.setString(4, vehicle.getBrand());
