@@ -9,7 +9,7 @@ public class Vehicle {
 
 
 
-    public Vehicle(int vehicleId, int userId, String ownerName, String regNumber, String brand, String model, String vehicleType) {
+    public Vehicle(int vehicleID, String ownerName, String registrationNumber, String brand, String model, String vehicleType) {
         this.vehicleId = vehicleId;
         this.userId = userId;
         this.ownerName = ownerName;
@@ -18,6 +18,7 @@ public class Vehicle {
         this.model = model;
         this.vehicleType = vehicleType;
     }
+
 
     public int getVehicleId() {
         return vehicleId;
