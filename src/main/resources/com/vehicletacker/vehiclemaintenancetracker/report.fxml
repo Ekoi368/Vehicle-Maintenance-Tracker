@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+   <top>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: #1e3a8a;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label style="-fx-text-fill: white; -fx-font-weight: bold;" text="Maintenance Reports">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label style="-fx-text-fill: #d1d5db;" text="View vehicle maintenance statistics and history" />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </padding>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="210.0" spacing="8.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #d1d5db; -fx-border-radius: 10; -fx-padding: 15;">
+                     <children>
+                        <Label text="Total Vehicles" />
+                        <Label fx:id="totalVehiclesLabel" text="0">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="210.0" spacing="8.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #d1d5db; -fx-border-radius: 10; -fx-padding: 15;">
+                     <children>
+                        <Label text="Maintenance Records" />
+                        <Label fx:id="totalMaintenanceLabel" text="0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="210.0" spacing="8.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #d1d5db; -fx-border-radius: 10; -fx-padding: 15;">
+                     <children>
+                        <Label text="Total Maintenance Cost" />
+                        <Label fx:id="totalCostLabel" text="GH₵0.00" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="57.0" layoutY="10.0" prefHeight="200.0" prefWidth="210.0" spacing="8.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #d1d5db; -fx-border-radius: 10; -fx-padding: 15;">
+                     <children>
+                        <Label text="Upcoming Maintenance" />
+                        <Label fx:id="upcomingMaintenanceLabel" text="0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="12.0">
+               <children>
+                  <Label text="From:" />
+                  <DatePicker id="fromDatePicker" fx:id="fromDatePicker" />
+                  <Label text="To:" />
+                  <DatePicker id="toDatePicker" fx:id="toDatePicker" />
+                  <Button mnemonicParsing="false" onAction="#generateReport" text="Generate Report" />
+                  <Button mnemonicParsing="false" onAction="#refreshReport" text="Refresh" />
+               </children>
+            </HBox>
+            <TableView fx:id="reportTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="vehicleColumn" prefWidth="75.0" text="Vehicle" />
+                <TableColumn fx:id="serviceTypeColumn" prefWidth="75.0" text="Service Type" />
+                  <TableColumn fx:id="serviceDateColumn" prefWidth="75.0" text="Service Date" />
+                  <TableColumn fx:id="mileageColumn" prefWidth="75.0" text="Mileage" />
+                  <TableColumn fx:id="costColumn" prefWidth="75.0" text="Cost" />
+                  <TableColumn fx:id="statusColumn" prefWidth="75.0" text="Status" />
+                  <TableColumn fx:id="descriptionColumn" prefWidth="75.0" text="Description" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="12.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#printReport" text="Print Report" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#exportReport" text="Export Report" />
+                  <Button layoutX="74.0" layoutY="10.0" mnemonicParsing="false" onAction="#goBackToDashboard" text="Back to Dashboard" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
